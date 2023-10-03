@@ -64,4 +64,13 @@ class CalculadoraTest {
 		assertEquals(expected, actual);
 	}
 
+	@Test
+	void testDivideEntre0() {
+		int expected = -1;
+		value2 = 0;
+		int actual = Calculadora.divide(value1, value2);
+		assertEquals(expected, actual);
+	}
+
+	
 }
